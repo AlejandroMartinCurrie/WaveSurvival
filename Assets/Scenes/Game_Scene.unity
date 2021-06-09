@@ -3367,7 +3367,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   followTarget: {fileID: 954549639}
   smoothSpeed: 1
-  cameraOffset: {x: 0, y: 10, z: -15}
+  cameraOffset: {x: 0, y: 15, z: -10}
 --- !u!4 &1853119806 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7896602942854355316, guid: afa47108f4eae694cb9e5c245184463d, type: 3}
