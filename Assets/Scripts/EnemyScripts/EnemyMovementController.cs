@@ -12,23 +12,16 @@ public class EnemyMovementController : MonoBehaviour
 
     void Start()
     {
-        playerGO =  GameObject.FindGameObjectWithTag("Player");
+        playerGO =  GameObject.FindGameObjectWithTag("PlayerFollow");
         player = playerGO.transform;
     }
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnCollisionEnter(Collision other)
     {
-        if(collision.gameObject.tag == "Player")
-        {
-            print("Hello");
-        }
-    }
-    private void OnTriggerEnter(Collider other)
-    {
-        if(other.tag =="Player")
+        if(other.gameObject.tag =="Player")
         {
             PlayerStatsController.player_Health -= 1;
-            //print(PlayerStatsController.player_Health);
+            
         }
     }
 

@@ -13,13 +13,6 @@ public class ShootingController : MonoBehaviour
        
     }
 
-    IEnumerator ShootingTimeController()
-    {
-        yield return new WaitForSeconds(3f);
-        CreateBullet();
-       
-    }
-
     public void CreateBullet()
     {
         Instantiate(bulletToShoot, shootingLocation);
@@ -32,7 +25,7 @@ public class ShootingController : MonoBehaviour
     {
         fr += Time.deltaTime;
 
-        if(fr > 3)
+        if(fr > 1)
         {
             CreateBullet();
             fr = 0;

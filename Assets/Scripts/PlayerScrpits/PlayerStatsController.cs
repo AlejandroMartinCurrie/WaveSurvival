@@ -6,9 +6,6 @@ public class PlayerStatsController : MonoBehaviour
 {
     public static int player_Health;
 
-
-
-
     public void PlayerDeathController()
     {
         if(player_Health <= 0)
@@ -17,13 +14,10 @@ public class PlayerStatsController : MonoBehaviour
         }
     }
 
-
-
     void Start()
     {
         player_Health = 3;
     }
-
 
 
 
